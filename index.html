@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+     <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&amp;family=Poppins:wght@100;200;300;400;500;600;700&amp;display=swap"
+          rel="stylesheet">
+     <link rel="stylesheet" href="src/style.css">
+     <title>Lasindu Official</title>
+     <link rel="icon" href="https://www.google.com/imgres?imgurl=https%3A%2F%2Flookaside.fbsbx.com%2Flookaside%2Fcrawler%2Fmedia%2F%3Fmedia_id%3D1259991494157966&imgrefurl=https%3A%2F%2Fwww.facebook.com%2Fpages%2Fcategory%2FPublic-figure%2FHandsome-boy-1259991494157966%2F&tbnid=5dH6kKwse63JwM&vet=12ahUKEwj7wvmL1-r1AhW5DLcAHY3fDDAQMygpegUIARCKAg..i&docid=TNS9-6l74eq4vM&w=474&h=592&q=handsome%20boys%20profile&hl=en&ved=2ahUKEwj7wvmL1-r1AhW5DLcAHY3fDDAQMygpegUIARCKAg" type="image/x-icon">
+</head>
+
+<body id="body" class="dark">
+     <div class="wrapper">
+          <div class="toggle">
+               <input class="toggle-input" type="checkbox" />
+               <div class="toggle-bg"></div>
+               <div class="toggle-switch">
+                    <div class="toggle-switch-figure"></div>
+                    <div class="toggle-switch-figureAlt"></div>
+               </div>
+          </div>
+     </div>
+     <div class="modal">
+          <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Flookaside.fbsbx.com%2Flookaside%2Fcrawler%2Fmedia%2F%3Fmedia_id%3D1259991494157966&imgrefurl=https%3A%2F%2Fwww.facebook.com%2Fpages%2Fcategory%2FPublic-figure%2FHandsome-boy-1259991494157966%2F&tbnid=5dH6kKwse63JwM&vet=12ahUKEwj7wvmL1-r1AhW5DLcAHY3fDDAQMygpegUIARCKAg..i&docid=TNS9-6l74eq4vM&w=474&h=592&q=handsome%20boys%20profile&hl=en&ved=2ahUKEwj7wvmL1-r1AhW5DLcAHY3fDDAQMygpegUIARCKAg" alt="">
+          <div class="close"></div>
+     </div>
+
+     <div id="container" class="container">
+          <input type="checkbox" name="" id="check">
+          <div class="card">
+               <div class="sidebar" id="sidebar">
+                    <ul>
+                         <li><a class="active" target="_blank" href="https://github.com/King-Amda">Github</a></li>
+                         <li><a class="active" target="_blank" href="https://twitter.com/Amda3King">Twitter</a></li>
+                         <li><a class="active" href="https://t.me/NiupunDinujaya">Telegram</a></li>
+                    </ul>
+               </div>
+               <div class="header">
+                    <label for="check" class="checkbtn" id="chkbtn">
+                         <div class="hamburger-menu">
+                              <div class="center"></div>
+                         </div>
+                    </label>
+                    <a href="mailto:mglasindusenash@gmail.com" class="mail">
+                         <i class="far fa-envelope"></i>
+                    </a>
+                    <div class="main">
+                         <div class="image">
+                              <div class="hover">
+                                   <i class="fas fa-camera fa-2x"></i>
+                              </div>
+                         </div>
+                         <h3 class="name">Lasindu Senash</h3>
+                         <h3 class="sub-name">@LasinduOfficial</h3>
+                    </div>
+               </div>
+
+               <div class="content">
+                    <div class="left">
+                         <div class="about-container">
+                              <h3 class="title">About</h3>
+                              <p class="text">
+                                   Font-End Developer. • HTML | CSS | JS | PHP 💖
+                                   <br>
+                                   Learning Back-End Languages.
+                              </p>
+                         </div>
+                         <div class="icons-container">
+                              <a href="https://github.com/King-Amda" class="icon" target="_blank">
+                                   <i class="fab fa-github"></i>
+                              </a>
+                              <a href="https://t.me/NiupunDinujaya" class="icon">
+                                   <i class="fab fa-telegram-plane"></i>
+                              </a>
+                              <a href="https://twitter.com/Amda3King" class="icon" target="_blank">
+                                   <i class="fab fa-twitter"></i>
+                              </a>
+                              <a href="https://t.me/NipunDinujayaOffline" class="icon" target="_blank">
+                                   <i class="fab fa-telegram-plane"></i>
+                              </a>
+                         </div>
+                         <div class="buttons-wrap">
+                              <div class="follow-wrap">
+                                   <a href="https://github.com/King-Amda" class="follow" target="_blank">Follow</a>
+                              </div>
+                              <div class="share-wrap">
+                                   <a href="t.me/NiupunDinujaya" class="share">More</a>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+     <script src="src/app.js"></script>
+     <script type="text/javascript">
+          var followers = document.getElementById("followers_count");
+          var data = fetch("https://api.github.com/users/AnjanaMadu")
+               .then(response => response.json())
+               .then(data => {
+                    followers.innerHTML = data.followers;
+               })
+     </script>
+</body>
+
+</html>
